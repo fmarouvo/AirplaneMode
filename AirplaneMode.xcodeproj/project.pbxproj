@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B6D574F1F28FF0900430CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D574E1F28FF0900430CD3 /* AppDelegate.swift */; };
+		0B6D57511F28FF0900430CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D57501F28FF0900430CD3 /* ViewController.swift */; };
+		0B6D57531F28FF0900430CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D57521F28FF0900430CD3 /* Assets.xcassets */; };
+		0B6D57561F28FF0900430CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D57541F28FF0900430CD3 /* Main.storyboard */; };
+		0B6D57611F28FF0900430CD3 /* AirplaneModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D57601F28FF0900430CD3 /* AirplaneModeTests.swift */; };
+		0B6D576C1F28FF0A00430CD3 /* AirplaneModeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D576B1F28FF0A00430CD3 /* AirplaneModeUITests.swift */; };
+		60B8DC4668B2E3A783499F0E /* Pods_AirplaneMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544ECBAF1AE39D4C55E248F9 /* Pods_AirplaneMode.framework */; };
+		672D70BC28CBE437FA7E2B23 /* Pods_AirplaneModeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E6CBF02DF2627BF4881590 /* Pods_AirplaneModeUITests.framework */; };
+		A42415CA4473E65420AD1BEE /* Pods_AirplaneModeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46F55FB89A32F7564375208 /* Pods_AirplaneModeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B6D575D1F28FF0900430CD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B6D57431F28FF0900430CD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B6D574A1F28FF0900430CD3;
+			remoteInfo = ManageNetworkConnection;
+		};
+		0B6D57681F28FF0A00430CD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B6D57431F28FF0900430CD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B6D574A1F28FF0900430CD3;
+			remoteInfo = ManageNetworkConnection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B6D574B1F28FF0900430CD3 /* AirplaneMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirplaneMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6D574E1F28FF0900430CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B6D57501F28FF0900430CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B6D57521F28FF0900430CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B6D57551F28FF0900430CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B6D57571F28FF0900430CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B6D575C1F28FF0900430CD3 /* AirplaneModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirplaneModeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6D57601F28FF0900430CD3 /* AirplaneModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneModeTests.swift; sourceTree = "<group>"; };
+		0B6D57621F28FF0900430CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B6D57671F28FF0900430CD3 /* AirplaneModeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirplaneModeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6D576B1F28FF0A00430CD3 /* AirplaneModeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneModeUITests.swift; sourceTree = "<group>"; };
+		0B6D576D1F28FF0A00430CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E6CBF02DF2627BF4881590 /* Pods_AirplaneModeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirplaneModeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0DCEC66C7D30D0545FEA1E /* Pods-AirplaneModeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirplaneModeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirplaneModeUITests/Pods-AirplaneModeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3B01748BD6B5F4DE172C3AE5 /* Pods-AirplaneModeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirplaneModeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirplaneModeTests/Pods-AirplaneModeTests.release.xcconfig"; sourceTree = "<group>"; };
+		544ECBAF1AE39D4C55E248F9 /* Pods_AirplaneMode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirplaneMode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B5B04FDABE3AD7D850322B /* Pods-AirplaneMode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirplaneMode.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirplaneMode/Pods-AirplaneMode.release.xcconfig"; sourceTree = "<group>"; };
+		812C90E7DDE45B9228F19E14 /* Pods-AirplaneMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirplaneMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirplaneMode/Pods-AirplaneMode.debug.xcconfig"; sourceTree = "<group>"; };
+		83CD3D2E6241C7C6A5025832 /* Pods-AirplaneModeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirplaneModeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirplaneModeTests/Pods-AirplaneModeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A015AC8EF1212514E42491DC /* Pods-AirplaneModeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirplaneModeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirplaneModeUITests/Pods-AirplaneModeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A46F55FB89A32F7564375208 /* Pods_AirplaneModeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirplaneModeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B6D57481F28FF0900430CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B8DC4668B2E3A783499F0E /* Pods_AirplaneMode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6D57591F28FF0900430CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42415CA4473E65420AD1BEE /* Pods_AirplaneModeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6D57641F28FF0900430CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				672D70BC28CBE437FA7E2B23 /* Pods_AirplaneModeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B6D57421F28FF0900430CD3 = {
+			isa = PBXGroup;
+			children = (
+				0B6D574D1F28FF0900430CD3 /* AirplaneMode */,
+				0B6D575F1F28FF0900430CD3 /* AirplaneModeTests */,
+				0B6D576A1F28FF0A00430CD3 /* AirplaneModeUITests */,
+				0B6D574C1F28FF0900430CD3 /* Products */,
+				19E71C0A6EED37C38374463D /* Pods */,
+				E144C757A488E5FB5C7D3C02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B6D574C1F28FF0900430CD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B6D574B1F28FF0900430CD3 /* AirplaneMode.app */,
+				0B6D575C1F28FF0900430CD3 /* AirplaneModeTests.xctest */,
+				0B6D57671F28FF0900430CD3 /* AirplaneModeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B6D574D1F28FF0900430CD3 /* AirplaneMode */ = {
+			isa = PBXGroup;
+			children = (
+				0B6D574E1F28FF0900430CD3 /* AppDelegate.swift */,
+				0B6D57501F28FF0900430CD3 /* ViewController.swift */,
+				0B6D57521F28FF0900430CD3 /* Assets.xcassets */,
+				0B6D57541F28FF0900430CD3 /* Main.storyboard */,
+				0B6D57571F28FF0900430CD3 /* Info.plist */,
+			);
+			path = AirplaneMode;
+			sourceTree = "<group>";
+		};
+		0B6D575F1F28FF0900430CD3 /* AirplaneModeTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B6D57601F28FF0900430CD3 /* AirplaneModeTests.swift */,
+				0B6D57621F28FF0900430CD3 /* Info.plist */,
+			);
+			path = AirplaneModeTests;
+			sourceTree = "<group>";
+		};
+		0B6D576A1F28FF0A00430CD3 /* AirplaneModeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B6D576B1F28FF0A00430CD3 /* AirplaneModeUITests.swift */,
+				0B6D576D1F28FF0A00430CD3 /* Info.plist */,
+			);
+			path = AirplaneModeUITests;
+			sourceTree = "<group>";
+		};
+		19E71C0A6EED37C38374463D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				812C90E7DDE45B9228F19E14 /* Pods-AirplaneMode.debug.xcconfig */,
+				57B5B04FDABE3AD7D850322B /* Pods-AirplaneMode.release.xcconfig */,
+				83CD3D2E6241C7C6A5025832 /* Pods-AirplaneModeTests.debug.xcconfig */,
+				3B01748BD6B5F4DE172C3AE5 /* Pods-AirplaneModeTests.release.xcconfig */,
+				A015AC8EF1212514E42491DC /* Pods-AirplaneModeUITests.debug.xcconfig */,
+				2F0DCEC66C7D30D0545FEA1E /* Pods-AirplaneModeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E144C757A488E5FB5C7D3C02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				544ECBAF1AE39D4C55E248F9 /* Pods_AirplaneMode.framework */,
+				A46F55FB89A32F7564375208 /* Pods_AirplaneModeTests.framework */,
+				10E6CBF02DF2627BF4881590 /* Pods_AirplaneModeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B6D574A1F28FF0900430CD3 /* AirplaneMode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B6D57701F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneMode" */;
+			buildPhases = (
+				AC2A5F5C8424A89A69C7FB92 /* [CP] Check Pods Manifest.lock */,
+				0B6D57471F28FF0900430CD3 /* Sources */,
+				0B6D57481F28FF0900430CD3 /* Frameworks */,
+				0B6D57491F28FF0900430CD3 /* Resources */,
+				468ABB3E80C5EA8DE33C268B /* [CP] Embed Pods Frameworks */,
+				8E36D4DDB9C422B49BE34DDB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirplaneMode;
+			productName = ManageNetworkConnection;
+			productReference = 0B6D574B1F28FF0900430CD3 /* AirplaneMode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B6D575B1F28FF0900430CD3 /* AirplaneModeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B6D57731F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneModeTests" */;
+			buildPhases = (
+				61B5619D907F7880C14BCAB1 /* [CP] Check Pods Manifest.lock */,
+				0B6D57581F28FF0900430CD3 /* Sources */,
+				0B6D57591F28FF0900430CD3 /* Frameworks */,
+				0B6D575A1F28FF0900430CD3 /* Resources */,
+				4A03705AA0475ED5426BA3A3 /* [CP] Embed Pods Frameworks */,
+				3D558CF17687894C8E91A4FD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B6D575E1F28FF0900430CD3 /* PBXTargetDependency */,
+			);
+			name = AirplaneModeTests;
+			productName = ManageNetworkConnectionTests;
+			productReference = 0B6D575C1F28FF0900430CD3 /* AirplaneModeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B6D57661F28FF0900430CD3 /* AirplaneModeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B6D57761F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneModeUITests" */;
+			buildPhases = (
+				6D9E6A73312301D82915B4BA /* [CP] Check Pods Manifest.lock */,
+				0B6D57631F28FF0900430CD3 /* Sources */,
+				0B6D57641F28FF0900430CD3 /* Frameworks */,
+				0B6D57651F28FF0900430CD3 /* Resources */,
+				60B68A77A6525C6D9DEA9DD6 /* [CP] Embed Pods Frameworks */,
+				9A08E01580AE474FA287EB36 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B6D57691F28FF0A00430CD3 /* PBXTargetDependency */,
+			);
+			name = AirplaneModeUITests;
+			productName = ManageNetworkConnectionUITests;
+			productReference = 0B6D57671F28FF0900430CD3 /* AirplaneModeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B6D57431F28FF0900430CD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = dev03;
+				TargetAttributes = {
+					0B6D574A1F28FF0900430CD3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MWMD8C75F2;
+						ProvisioningStyle = Automatic;
+					};
+					0B6D575B1F28FF0900430CD3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MWMD8C75F2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B6D574A1F28FF0900430CD3;
+					};
+					0B6D57661F28FF0900430CD3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MWMD8C75F2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B6D574A1F28FF0900430CD3;
+					};
+				};
+			};
+			buildConfigurationList = 0B6D57461F28FF0900430CD3 /* Build configuration list for PBXProject "AirplaneMode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B6D57421F28FF0900430CD3;
+			productRefGroup = 0B6D574C1F28FF0900430CD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B6D574A1F28FF0900430CD3 /* AirplaneMode */,
+				0B6D575B1F28FF0900430CD3 /* AirplaneModeTests */,
+				0B6D57661F28FF0900430CD3 /* AirplaneModeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B6D57491F28FF0900430CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6D57531F28FF0900430CD3 /* Assets.xcassets in Resources */,
+				0B6D57561F28FF0900430CD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6D575A1F28FF0900430CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6D57651F28FF0900430CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D558CF17687894C8E91A4FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirplaneModeTests/Pods-AirplaneModeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		468ABB3E80C5EA8DE33C268B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirplaneMode/Pods-AirplaneMode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A03705AA0475ED5426BA3A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirplaneModeTests/Pods-AirplaneModeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60B68A77A6525C6D9DEA9DD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirplaneModeUITests/Pods-AirplaneModeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61B5619D907F7880C14BCAB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9E6A73312301D82915B4BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E36D4DDB9C422B49BE34DDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirplaneMode/Pods-AirplaneMode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A08E01580AE474FA287EB36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirplaneModeUITests/Pods-AirplaneModeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2A5F5C8424A89A69C7FB92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B6D57471F28FF0900430CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6D57511F28FF0900430CD3 /* ViewController.swift in Sources */,
+				0B6D574F1F28FF0900430CD3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6D57581F28FF0900430CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6D57611F28FF0900430CD3 /* AirplaneModeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6D57631F28FF0900430CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6D576C1F28FF0A00430CD3 /* AirplaneModeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B6D575E1F28FF0900430CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B6D574A1F28FF0900430CD3 /* AirplaneMode */;
+			targetProxy = 0B6D575D1F28FF0900430CD3 /* PBXContainerItemProxy */;
+		};
+		0B6D57691F28FF0A00430CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B6D574A1F28FF0900430CD3 /* AirplaneMode */;
+			targetProxy = 0B6D57681F28FF0A00430CD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B6D57541F28FF0900430CD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B6D57551F28FF0900430CD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B6D576E1F28FF0A00430CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B6D576F1F28FF0A00430CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		0B6D57711F28FF0A00430CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 812C90E7DDE45B9228F19E14 /* Pods-AirplaneMode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MWMD8C75F2;
+				INFOPLIST_FILE = AirplaneMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0B6D57721F28FF0A00430CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B5B04FDABE3AD7D850322B /* Pods-AirplaneMode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MWMD8C75F2;
+				INFOPLIST_FILE = AirplaneMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0B6D57741F28FF0A00430CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CD3D2E6241C7C6A5025832 /* Pods-AirplaneModeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MWMD8C75F2;
+				INFOPLIST_FILE = AirplaneMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneModeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirplaneMode.temp_caseinsensitive_rename.app/Contents/MacOS/AirplaneMode.temp_caseinsensitive_rename";
+			};
+			name = Debug;
+		};
+		0B6D57751F28FF0A00430CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B01748BD6B5F4DE172C3AE5 /* Pods-AirplaneModeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MWMD8C75F2;
+				INFOPLIST_FILE = AirplaneMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneModeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirplaneMode.temp_caseinsensitive_rename.app/Contents/MacOS/AirplaneMode.temp_caseinsensitive_rename";
+			};
+			name = Release;
+		};
+		0B6D57771F28FF0A00430CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A015AC8EF1212514E42491DC /* Pods-AirplaneModeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MWMD8C75F2;
+				INFOPLIST_FILE = AirplaneModeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneModeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AirplaneMode;
+			};
+			name = Debug;
+		};
+		0B6D57781F28FF0A00430CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0DCEC66C7D30D0545FEA1E /* Pods-AirplaneModeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MWMD8C75F2;
+				INFOPLIST_FILE = AirplaneModeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneModeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AirplaneMode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B6D57461F28FF0900430CD3 /* Build configuration list for PBXProject "AirplaneMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6D576E1F28FF0A00430CD3 /* Debug */,
+				0B6D576F1F28FF0A00430CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B6D57701F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6D57711F28FF0A00430CD3 /* Debug */,
+				0B6D57721F28FF0A00430CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B6D57731F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneModeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6D57741F28FF0A00430CD3 /* Debug */,
+				0B6D57751F28FF0A00430CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B6D57761F28FF0A00430CD3 /* Build configuration list for PBXNativeTarget "AirplaneModeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6D57771F28FF0A00430CD3 /* Debug */,
+				0B6D57781F28FF0A00430CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B6D57431F28FF0900430CD3 /* Project object */;
+}
