@@ -5,7 +5,7 @@
 //  Created by dev03 on 26/07/17.
 //  Copyright © 2017 dev03. All rights reserved.
 //
-
+// NSStatusItem
 import Cocoa
 import RealmSwift
 
