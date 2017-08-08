@@ -28,6 +28,12 @@ class ViewController: NSViewController {
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		let userData = getUserData()
+		if userData?.defaultLocationName != "" && userData?.rootPassword != "" {
+			view.window?.title = "AirplaneMode"
+			firstView.isHidden = true
+			secondView.isHidden = false
+		}
 		// Do any additional setup after loading the view.
 	}
     
