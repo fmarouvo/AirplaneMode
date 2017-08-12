@@ -13,6 +13,7 @@ import CoreFoundation
 class ViewController: NSViewController {
 
     let realm = try! Realm()
+    var tgButtonMode: TgButtonMode = .off
 
     @IBOutlet weak var firstView: NSView!
     @IBOutlet weak var rootPassword: NSTextField!
@@ -22,7 +23,14 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var secondView: NSView!
 	@IBOutlet weak var toggleButton: NSButton!
-	
+    
+    @IBOutlet weak var tgBorder: NSImageView!
+    @IBOutlet weak var tgBg: NSImageView!
+    @IBOutlet weak var tgCornerLeft: NSImageView!
+    @IBOutlet weak var tgCornerRight: NSImageView!
+    @IBOutlet weak var tgButton: NSButton!
+    @IBOutlet weak var tgButtonLeading: NSLayoutConstraint!
+    
     override func viewDidAppear() {
         super.viewDidAppear()
         view.window?.title = "AirplaneMode (Settings)"
@@ -36,6 +44,7 @@ class ViewController: NSViewController {
 			firstView.isHidden = true
 			secondView.isHidden = false
 		}
+        setupTgButton()
 		// Do any additional setup after loading the view.
 	}
     
@@ -59,6 +68,36 @@ class ViewController: NSViewController {
             return nil
         }
         return user
+    }
+    
+    private func setupTgButton(mode: TgButtonMode = .off) {
+        guard let userData = getUserData() else { return }
+        if userData.hasCreated == true {
+            switch mode {
+            case .on:
+                tgButtonMode = .on
+                tgBg.image = NSImage(named: "tg_bg_on")
+                tgCornerLeft.isHidden = false
+                tgCornerRight.isHidden = true
+                tgButtonLeading.constant = 36
+                
+                NSAppleScript(source: "do shell script \"networksetup -switchtolocation AirplaneMode\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
+            case .off:
+                tgButtonMode = .off
+                tgBg.image = NSImage(named: "tg_bg_off")
+                tgCornerLeft.isHidden = true
+                tgCornerRight.isHidden = false
+                tgButtonLeading.constant = 1
+                
+                NSAppleScript(source: "do shell script \"networksetup -switchtolocation \(userData.defaultLocationName)\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
+            }
+        } else {
+            let alert = NSAlert.init()
+            alert.messageText = "Should you add AirplanMode before change network status."
+            alert.informativeText = "Please, do it!"
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        }
     }
     
     func dialogOKCancel(question: String, text: String) -> Bool {
@@ -112,25 +151,7 @@ class ViewController: NSViewController {
             rootSecurePassword.isHidden = true
         }
     }
-    
-    @IBAction func buttonTapped(button: NSButton) {
-        guard let userData = getUserData() else { return }
-        if userData.hasCreated == true {
-            if button.state == NSOnState {
-				NSAppleScript(source: "do shell script \"networksetup -switchtolocation AirplaneMode\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
-            } else {
-                NSAppleScript(source: "do shell script \"networksetup -switchtolocation \(userData.defaultLocationName)\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
-            }
-        } else {
-            let alert = NSAlert.init()
-            alert.messageText = "Should you add AirplanMode before change network status."
-            alert.informativeText = "Please, do it!"
-            alert.addButton(withTitle: "OK")
-            alert.runModal()
-            button.state = NSOffState
-        }
-    }
-    
+
     @IBAction func buttonModeTapped(button: NSButton) {
         guard let userData = getUserData() else { return }
         if userData.hasCreated == false {
@@ -176,6 +197,15 @@ class ViewController: NSViewController {
         firstView.isHidden = false
         secondView.isHidden = true
     }
+    
+    @IBAction func buttonTgButtonTapped(button: NSButton) {
+        switch tgButtonMode {
+        case .on:
+            setupTgButton(mode: .off)
+        case .off:
+            setupTgButton(mode: .on)
+        }
+    }
 }
 
 //MARK: - Extensions
@@ -191,11 +221,16 @@ extension ViewController: NSControlTextEditingDelegate {
     }
 }
 
-//MARK: - Structs
+//MARK: - Struct
 final class UserData: Object {
     dynamic var rootPassword: String = ""
     dynamic var defaultLocationName: String = "Automatic"
     dynamic var hasCreated: Bool = false
 }
 
+//MARK: - Enum
+enum TgButtonMode {
+    case on
+    case off
+}
 
