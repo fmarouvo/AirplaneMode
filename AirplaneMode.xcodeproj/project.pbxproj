@@ -240,6 +240,7 @@
 					0B6D574A1F28FF0900430CD3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = MWMD8C75F2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					0B6D575B1F28FF0900430CD3 = {
@@ -590,12 +591,14 @@
 			baseConfigurationReference = 812C90E7DDE45B9228F19E14 /* Pods-AirplaneMode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MWMD8C75F2;
 				INFOPLIST_FILE = AirplaneMode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.capptan.br.AirplaneMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -605,6 +608,7 @@
 			baseConfigurationReference = 57B5B04FDABE3AD7D850322B /* Pods-AirplaneMode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MWMD8C75F2;
 				INFOPLIST_FILE = AirplaneMode/Info.plist;
