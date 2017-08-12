@@ -157,7 +157,7 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97J-xw-yky">
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97J-xw-yky">
                                         <rect key="frame" x="14" y="113" width="150" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="vq3-1d-uRy">
@@ -165,6 +165,9 @@
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <connections>
+                                            <outlet property="delegate" destination="MRp-tz-gKz" id="dWO-0G-a88"/>
+                                        </connections>
                                     </textField>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7d-9F-Ttj">
                                         <rect key="frame" x="14" y="51" width="150" height="22"/>
@@ -197,6 +200,32 @@
                                             <action selector="buttonSaveTappedWithButton:" target="MRp-tz-gKz" id="4jl-OX-Un2"/>
                                         </connections>
                                     </button>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-1U-2D5">
+                                        <rect key="frame" x="170" y="115" width="117" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="Show password" bezelStyle="regularSquare" imagePosition="left" inset="2" id="WUV-zB-iAX">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="buttonShowPasswordTappedWithButton:" target="MRp-tz-gKz" id="BQM-6m-DMq"/>
+                                        </connections>
+                                    </button>
+                                    <secureTextField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqX-vi-R7t">
+                                        <rect key="frame" x="14" y="113" width="150" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="uPz-3v-hTs">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <allowedInputSourceLocales>
+                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                            </allowedInputSourceLocales>
+                                        </secureTextFieldCell>
+                                        <connections>
+                                            <outlet property="delegate" destination="MRp-tz-gKz" id="q6o-rH-kJb"/>
+                                        </connections>
+                                    </secureTextField>
                                 </subviews>
                                 <accessibility identifier="NetworkStatus"/>
                             </view>
@@ -207,7 +236,9 @@
                         <outlet property="defaultLocationName" destination="A7d-9F-Ttj" id="L0Q-h6-O1p"/>
                         <outlet property="firstView" destination="qa4-QQ-Zfb" id="vKZ-yr-Keb"/>
                         <outlet property="rootPassword" destination="97J-xw-yky" id="rn2-gh-jjt"/>
+                        <outlet property="rootSecurePassword" destination="qqX-vi-R7t" id="8Og-j7-sd5"/>
                         <outlet property="secondView" destination="m2S-Jp-Qdl" id="tH9-wz-33n"/>
+                        <outlet property="showPassword" destination="6Tb-1U-2D5" id="7DG-2M-B6Y"/>
                         <outlet property="toggleButton" destination="Edc-Tf-vcY" id="RCk-3C-T6g"/>
                     </connections>
                 </viewController>

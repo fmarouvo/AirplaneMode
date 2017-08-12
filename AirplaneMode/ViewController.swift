@@ -16,7 +16,9 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var firstView: NSView!
     @IBOutlet weak var rootPassword: NSTextField!
+    @IBOutlet weak var rootSecurePassword: NSSecureTextField!
     @IBOutlet weak var defaultLocationName: NSTextField!
+    @IBOutlet weak var showPassword: NSButton!
     
     @IBOutlet weak var secondView: NSView!
 	@IBOutlet weak var toggleButton: NSButton!
@@ -40,8 +42,9 @@ class ViewController: NSViewController {
     override func viewWillAppear() {
         super.viewWillAppear()
         guard let userData = getUserData() else { return }
-        guard let rootPassword = rootPassword, let defaultLocationName = defaultLocationName else { return }
-        rootPassword.stringValue = userData.rootPassword 
+        guard let rootPassword = rootPassword, let defaultLocationName = defaultLocationName, let rootSecurePassword = rootSecurePassword else { return }
+        rootPassword.stringValue = userData.rootPassword
+        rootSecurePassword.stringValue = userData.rootPassword
         defaultLocationName.stringValue = userData.defaultLocationName 
     }
 
@@ -100,9 +103,18 @@ class ViewController: NSViewController {
         }
     }
     
+    @IBAction func buttonShowPasswordTapped(button: NSButton) {
+        if button.state == NSOnState {
+            rootPassword.isHidden = true
+            rootSecurePassword.isHidden = false
+        } else {
+            rootPassword.isHidden = false
+            rootSecurePassword.isHidden = true
+        }
+    }
+    
     @IBAction func buttonTapped(button: NSButton) {
         guard let userData = getUserData() else { return }
-        print(userData.rootPassword)
         if userData.hasCreated == true {
             if button.state == NSOnState {
 				NSAppleScript(source: "do shell script \"networksetup -switchtolocation AirplaneMode\" with administrator privileges password \"\(userData.rootPassword)\"")?.executeAndReturnError(nil)
@@ -163,6 +175,19 @@ class ViewController: NSViewController {
         view.window?.title = "AirplaneMode (Settings)"
         firstView.isHidden = false
         secondView.isHidden = true
+    }
+}
+
+//MARK: - Extensions
+extension ViewController: NSControlTextEditingDelegate {
+    override func controlTextDidChange(_ notification: Notification) {
+        if let rootPassword = notification.object as? NSTextField {
+            rootSecurePassword.stringValue = rootPassword.stringValue
+        }
+        
+        if let rootSecurePassword = notification.object as? NSTextField {
+            rootPassword.stringValue = rootSecurePassword.stringValue
+        }
     }
 }
 
