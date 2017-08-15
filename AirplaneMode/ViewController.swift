@@ -22,8 +22,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var showPassword: NSButton!
     
     @IBOutlet weak var secondView: NSView!
-	@IBOutlet weak var toggleButton: NSButton!
-    
+
     @IBOutlet weak var tgBorder: NSImageView!
     @IBOutlet weak var tgBg: NSImageView!
     @IBOutlet weak var tgCornerLeft: NSImageView!
@@ -44,9 +43,24 @@ class ViewController: NSViewController {
 			firstView.isHidden = true
 			secondView.isHidden = false
 		}
-        setupTgButton()
 		// Do any additional setup after loading the view.
 	}
+    
+    override func mouseDown(with event: NSEvent) {
+        let location = event.locationInWindow
+        if location.x >= 154.7890625 && location.x <= 217.046875 && location.y >= 124.23828125 && location.y <= 139.859375 {
+            buttonTgBgTapped()
+        }
+    }
+    
+    func buttonTgBgTapped() {
+        switch tgButtonMode {
+        case .on:
+            setupTgButton(mode: .off)
+        case .off:
+            setupTgButton(mode: .on)
+        }
+    }
     
     override func viewWillAppear() {
         super.viewWillAppear()
@@ -69,7 +83,7 @@ class ViewController: NSViewController {
         }
         return user
     }
-    
+
     private func setupTgButton(mode: TgButtonMode = .off) {
         guard let userData = getUserData() else { return }
         if userData.hasCreated == true {
@@ -144,11 +158,11 @@ class ViewController: NSViewController {
     
     @IBAction func buttonShowPasswordTapped(button: NSButton) {
         if button.state == NSOnState {
-            rootPassword.isHidden = true
-            rootSecurePassword.isHidden = false
-        } else {
             rootPassword.isHidden = false
             rootSecurePassword.isHidden = true
+        } else {
+            rootPassword.isHidden = true
+            rootSecurePassword.isHidden = false
         }
     }
 
