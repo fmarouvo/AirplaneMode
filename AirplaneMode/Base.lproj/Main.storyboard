@@ -115,6 +115,9 @@
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <connections>
+                                            <outlet property="delegate" destination="MRp-tz-gKz" id="twH-ag-jYe"/>
+                                        </connections>
                                     </textField>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7d-9F-Ttj">
                                         <rect key="frame" x="14" y="51" width="150" height="22"/>
@@ -169,6 +172,9 @@
                                                 <string>NSAllRomanInputSourcesLocaleIdentifier</string>
                                             </allowedInputSourceLocales>
                                         </secureTextFieldCell>
+                                        <connections>
+                                            <outlet property="delegate" destination="MRp-tz-gKz" id="5L3-Fx-ULA"/>
+                                        </connections>
                                     </secureTextField>
                                 </subviews>
                                 <accessibility identifier="NetworkStatus"/>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-AirplaneMode.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-AirplaneModeTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-AirplaneModeUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1D5EE5B933074450C04B75FA1DA546F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F3ECF853E2575432F6BFA274935386A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DBDDFD0AA3282DC6130EDE54D083F06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82CA1BC7CE9D91F42721F738C1C369AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFEB34623AF5264C8555DEF5E571F2F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

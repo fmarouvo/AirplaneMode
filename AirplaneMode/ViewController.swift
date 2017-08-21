@@ -129,18 +129,18 @@ class ViewController: NSViewController {
     }
     
     @IBAction func buttonSaveTapped(button: NSButton) {
-        print(rootPassword.stringValue)
-        if rootPassword.stringValue != "" && defaultLocationName.stringValue != "" {
+        print(rootSecurePassword.stringValue)
+        if rootSecurePassword.stringValue != "" && defaultLocationName.stringValue != "" {
             let userData = getUserData()
             if userData != nil {
                 try! realm.write {
-                    userData?.rootPassword = rootPassword.stringValue
+                    userData?.rootPassword = rootSecurePassword.stringValue
                     userData?.defaultLocationName = defaultLocationName.stringValue
                     try! realm.commitWrite()
                 }
             } else {
                 let userData = UserData()
-                userData.rootPassword = rootPassword.stringValue
+                userData.rootPassword = rootSecurePassword.stringValue
                 userData.defaultLocationName = defaultLocationName.stringValue
                 try! realm.write {
                     realm.add(userData)
